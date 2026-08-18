@@ -1,19 +1,4 @@
-const tintColorLight = '#2f95dc';
-const tintColorDark = '#fff';
+// Source unique des couleurs : src/ui/theme.ts (guidelines-de-developpement.md §1.5).
+import { COLORS } from '@/src/ui/theme';
 
-export default {
-  light: {
-    text: '#000',
-    background: '#fff',
-    tint: tintColorLight,
-    tabIconDefault: '#ccc',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#fff',
-    background: '#000',
-    tint: tintColorDark,
-    tabIconDefault: '#ccc',
-    tabIconSelected: tintColorDark,
-  },
-};
+export default COLORS;

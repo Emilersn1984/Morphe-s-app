@@ -1,0 +1,166 @@
+{
+  "common": {
+    "appName": "Morphé",
+    "ok": "OK"
+  },
+  "tabs": {
+    "map": "Mappa",
+    "settings": "Impostazioni"
+  },
+  "map": {
+    "batteryBoardLabel": "Batteria della scatola: {{pct}} %",
+    "batteryTurretLabel": "Batteria della torretta: {{pct}} %",
+    "boatMarker": "Barca",
+    "anchorMarker": "Ancora",
+    "referenceMarker": "Riferimento fisso",
+    "unknownAnchor": "Posizione dell'ancora sconosciuta: torretta non rilevata o nessun punto GPS.",
+    "staleData": "Ultimi valori conosciuti, {{elapsed}}",
+    "state": {
+      "label": "Stato dell'ancoraggio",
+      "idle": "A riposo",
+      "anchored": "Ancoraggio attivo",
+      "alarm": "ALLARME",
+      "test": "Test"
+    },
+    "drift": "Deriva ancora ↔ riferimento",
+    "dist": "Distanza barca ↔ ancora",
+    "preAlert": "Preallarme",
+    "outOfFive": "{{out}}/5 letture",
+    "meters": "{{value}} m",
+    "gpsQuality": {
+      "label": "Qualità GPS",
+      "none": "Nessun punto",
+      "twoD": "2D",
+      "threeD": "3D"
+    },
+    "anchorAge": "Età del punto dell'ancora",
+    "schematic": {
+      "noMapData": "Sfondo mappa non disponibile — geometria esatta mostrata",
+      "scale": "Raggio del cerchio = {{meters}} m"
+    }
+  },
+  "anchor": {
+    "startButton": "Avvia l'ancoraggio",
+    "stopButton": "Ferma l'ancoraggio",
+    "toleranceDialog": {
+      "title": "Tolleranza dell'ancoraggio",
+      "description": "Distanza massima tollerata tra l'ancora e la sua posizione di riferimento prima che si attivi l'allarme.",
+      "value": "{{value}} m",
+      "confirm": "Confermare",
+      "cancel": "Annullare"
+    },
+    "acquiring": {
+      "title": "Acquisizione in corso…",
+      "missing": {
+        "gps": "In attesa della posizione GPS della barca",
+        "turret": "In attesa della posizione dell'ancora (torretta)"
+      },
+      "cancel": "Annullare"
+    },
+    "confirmStop": {
+      "title": "Fermare l'ancoraggio?",
+      "message": "La scatola smetterà di monitorare l'ancora.",
+      "confirm": "Fermare",
+      "cancel": "Annullare"
+    }
+  },
+  "alarm": {
+    "title": {
+      "drag": "ALLARME — scarroccio dell'ancora",
+      "turret_lost": "ALLARME — torretta perduta",
+      "low_bat": "ALLARME — batteria scarica"
+    },
+    "drift": "Deriva misurata: {{value}} m",
+    "time": "Attivato alle {{time}}",
+    "stopButton": "Ferma l'allarme",
+    "silentModeWarning": "Per essere svegliato, lascia la suoneria attiva e l'app aperta se possibile.",
+    "notification": {
+      "title": {
+        "drag": "ALLARME — scarroccio dell'ancora",
+        "turret_lost": "ALLARME — torretta perduta",
+        "low_bat": "ALLARME — batteria scarica"
+      },
+      "body": "Deriva misurata: {{value}} m. Apri l'app per confermare."
+    },
+    "linkLost": {
+      "title": "Collegamento con la scatola perso",
+      "body": "Nessun dato ricevuto da più di 2 minuti durante un ancoraggio attivo."
+    },
+    "permission": {
+      "title": "Consentire le notifiche?",
+      "message": "Per essere avvisato anche se il telefono è bloccato o l'app in background, consenti le notifiche. Senza di esse, l'allarme suonerà solo con l'app aperta.",
+      "allow": "Consenti",
+      "later": "Più tardi"
+    }
+  },
+  "errors": {
+    "ERR_PIN": "PIN della SIM rifiutato",
+    "ERR_NO_FIX": "Posizione GPS non disponibile, impossibile avviare l'ancoraggio",
+    "ERR_NO_TURRET": "Ancora non rilevata: controlla la torretta",
+    "ERR_BUSY": "Scatola occupata, riprova",
+    "ERR_RANGE": "Valore non valido",
+    "ERR_GSM": "Nessuna rete GSM: SMS non inviato",
+    "ERR_SIM": "SIM assente o bloccata",
+    "ERR_UNKNOWN": "Errore della scatola",
+    "timeout": "La scatola non risponde, riprova",
+    "stopFailed": "Impossibile fermare l'ancoraggio, riprova"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "placeholder": "La schermata Impostazioni sarà costruita nella fase 6."
+  },
+  "battery": {
+    "title": {
+      "low": "Batteria scarica",
+      "critical": "Batteria critica"
+    },
+    "message": {
+      "low": "Batteria {{element}} scarica",
+      "critical": "Batteria {{element}} critica"
+    },
+    "element": {
+      "board": "della scatola",
+      "turret": "della torretta"
+    }
+  },
+  "demo": {
+    "banner": "MODALITÀ DIMOSTRAZIONE"
+  },
+  "staleness": {
+    "secondsAgo": "{{count}} s fa",
+    "minutesAgo": "{{count}} min fa",
+    "hoursAgo": "{{count}} h fa"
+  },
+  "notFound": {
+    "title": "Questa schermata non esiste.",
+    "goHome": "Vai alla schermata iniziale"
+  },
+  "dev": {
+    "title": "Sviluppo — scatola simulata",
+    "openLink": "Apri la schermata di sviluppo",
+    "scenario": "Scenario",
+    "connection": {
+      "connected": "Connesso",
+      "connecting": "Connessione…",
+      "disconnected": "Disconnesso"
+    },
+    "state": "Stato",
+    "tolerance": "Tolleranza",
+    "drift": "Deriva ancora ↔ riferimento",
+    "dist": "Distanza barca ↔ ancora",
+    "out": "Letture consecutive fuori zona",
+    "batteryBoard": "Batteria della scatola",
+    "batteryTurret": "Batteria della torretta",
+    "gsm": "GSM",
+    "actions": "Azioni",
+    "startAnchor": "Avvia l'ancoraggio ({{tol}} m)",
+    "stopAnchor": "Ferma l'ancoraggio",
+    "ackAlarm": "Conferma l'allarme",
+    "testSms": "Prova SMS",
+    "testAlarm": "Prova allarme",
+    "log": "Registro",
+    "invalidFrame": "Trama non valida ignorata: {{reason}}",
+    "noData": "Nessun dato ricevuto per ora."
+  }
+}

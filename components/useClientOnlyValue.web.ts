@@ -5,6 +5,9 @@ import { useEffect, useState } from 'react';
 export function useClientOnlyValue<S, C>(server: S, client: C): S | C {
   const [value, setValue] = useState<S | C>(server);
   useEffect(() => {
+    // Bascule volontaire de la valeur serveur vers la valeur client après
+    // l'hydratation web : c'est le seul but de ce hook (voir commentaire ci-dessus).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setValue(client);
   }, [client]);
 

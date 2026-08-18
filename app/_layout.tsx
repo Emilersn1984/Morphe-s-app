@@ -5,6 +5,9 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/components/useColorScheme';
+import { AlarmController } from '@/src/alarm/AlarmController';
+import { BoardConnectionProvider } from '@/src/ble/BoardConnectionContext';
+import '@/src/i18n';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -12,7 +15,6 @@ export {
 } from 'expo-router';
 
 export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
   initialRouteName: '(tabs)',
 };
 
@@ -45,12 +47,17 @@ export default function RootLayout() {
 function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
+  // Montée une seule fois à la racine : la Carte, les Réglages et l'écran de
+  // développement (`/dev`, un écran frère de `(tabs)`, pas un enfant)
+  // partagent ainsi la même connexion BLE (guidelines-de-developpement.md §3.3).
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-      </Stack>
+      <BoardConnectionProvider>
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        </Stack>
+        <AlarmController />
+      </BoardConnectionProvider>
     </ThemeProvider>
   );
 }

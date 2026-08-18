@@ -1,0 +1,166 @@
+{
+  "common": {
+    "appName": "Morphé",
+    "ok": "OK"
+  },
+  "tabs": {
+    "map": "Karte",
+    "settings": "Einstellungen"
+  },
+  "map": {
+    "batteryBoardLabel": "Akku der Box: {{pct}} %",
+    "batteryTurretLabel": "Akku des Turms: {{pct}} %",
+    "boatMarker": "Boot",
+    "anchorMarker": "Anker",
+    "referenceMarker": "Feste Referenz",
+    "unknownAnchor": "Ankerposition unbekannt: Turm nicht erkannt oder kein GPS-Fix.",
+    "staleData": "Letzte bekannte Werte, {{elapsed}}",
+    "state": {
+      "label": "Ankerstatus",
+      "idle": "Im Ruhezustand",
+      "anchored": "Ankern aktiv",
+      "alarm": "ALARM",
+      "test": "Test"
+    },
+    "drift": "Abweichung Anker ↔ Referenz",
+    "dist": "Abstand Boot ↔ Anker",
+    "preAlert": "Voralarm",
+    "outOfFive": "{{out}}/5 Messungen",
+    "meters": "{{value}} m",
+    "gpsQuality": {
+      "label": "GPS-Qualität",
+      "none": "Kein Fix",
+      "twoD": "2D",
+      "threeD": "3D"
+    },
+    "anchorAge": "Alter des Ankerpunkts",
+    "schematic": {
+      "noMapData": "Kartenhintergrund nicht verfügbar — exakte Geometrie angezeigt",
+      "scale": "Kreisradius = {{meters}} m"
+    }
+  },
+  "anchor": {
+    "startButton": "Ankern starten",
+    "stopButton": "Ankern beenden",
+    "toleranceDialog": {
+      "title": "Ankertoleranz",
+      "description": "Maximal tolerierte Distanz zwischen dem Anker und seiner Referenzposition, bevor der Alarm ausgelöst wird.",
+      "value": "{{value}} m",
+      "confirm": "Bestätigen",
+      "cancel": "Abbrechen"
+    },
+    "acquiring": {
+      "title": "Erfassung läuft…",
+      "missing": {
+        "gps": "Warten auf die GPS-Position des Boots",
+        "turret": "Warten auf die Position des Ankers (Turm)"
+      },
+      "cancel": "Abbrechen"
+    },
+    "confirmStop": {
+      "title": "Ankern beenden?",
+      "message": "Die Box beendet die Überwachung des Ankers.",
+      "confirm": "Beenden",
+      "cancel": "Abbrechen"
+    }
+  },
+  "alarm": {
+    "title": {
+      "drag": "ALARM — Ankerdrift",
+      "turret_lost": "ALARM — Turm verloren",
+      "low_bat": "ALARM — Akku schwach"
+    },
+    "drift": "Gemessene Abweichung: {{value}} m",
+    "time": "Ausgelöst um {{time}}",
+    "stopButton": "Alarm stoppen",
+    "silentModeWarning": "Um geweckt zu werden, lasse den Klingelton aktiviert und die App wenn möglich geöffnet.",
+    "notification": {
+      "title": {
+        "drag": "ALARM — Ankerdrift",
+        "turret_lost": "ALARM — Turm verloren",
+        "low_bat": "ALARM — Akku schwach"
+      },
+      "body": "Gemessene Abweichung: {{value}} m. Öffne die App, um zu bestätigen."
+    },
+    "linkLost": {
+      "title": "Verbindung zur Box verloren",
+      "body": "Seit mehr als 2 Minuten keine Daten während eines aktiven Ankerns empfangen."
+    },
+    "permission": {
+      "title": "Benachrichtigungen erlauben?",
+      "message": "Um auch bei gesperrtem Telefon oder App im Hintergrund gewarnt zu werden, erlaube Benachrichtigungen. Ohne sie klingelt der Alarm nur bei geöffneter App.",
+      "allow": "Erlauben",
+      "later": "Später"
+    }
+  },
+  "errors": {
+    "ERR_PIN": "SIM-PIN abgelehnt",
+    "ERR_NO_FIX": "GPS-Position nicht verfügbar, Ankern kann nicht gestartet werden",
+    "ERR_NO_TURRET": "Anker nicht erkannt: Turm überprüfen",
+    "ERR_BUSY": "Box beschäftigt, erneut versuchen",
+    "ERR_RANGE": "Ungültiger Wert",
+    "ERR_GSM": "Kein GSM-Netz: SMS nicht gesendet",
+    "ERR_SIM": "SIM-Karte fehlt oder ist gesperrt",
+    "ERR_UNKNOWN": "Fehler der Box",
+    "timeout": "Die Box antwortet nicht, erneut versuchen",
+    "stopFailed": "Ankern konnte nicht beendet werden, erneut versuchen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "placeholder": "Der Einstellungsbildschirm wird in Schritt 6 erstellt."
+  },
+  "battery": {
+    "title": {
+      "low": "Akku schwach",
+      "critical": "Akku kritisch"
+    },
+    "message": {
+      "low": "Akku {{element}} schwach",
+      "critical": "Akku {{element}} kritisch"
+    },
+    "element": {
+      "board": "der Box",
+      "turret": "des Turms"
+    }
+  },
+  "demo": {
+    "banner": "DEMONSTRATIONSMODUS"
+  },
+  "staleness": {
+    "secondsAgo": "vor {{count}} s",
+    "minutesAgo": "vor {{count}} min",
+    "hoursAgo": "vor {{count}} h"
+  },
+  "notFound": {
+    "title": "Dieser Bildschirm existiert nicht.",
+    "goHome": "Zur Startseite"
+  },
+  "dev": {
+    "title": "Entwicklung — simulierte Box",
+    "openLink": "Entwicklungsbildschirm öffnen",
+    "scenario": "Szenario",
+    "connection": {
+      "connected": "Verbunden",
+      "connecting": "Verbindung wird aufgebaut…",
+      "disconnected": "Getrennt"
+    },
+    "state": "Zustand",
+    "tolerance": "Toleranz",
+    "drift": "Abweichung Anker ↔ Referenz",
+    "dist": "Abstand Boot ↔ Anker",
+    "out": "Aufeinanderfolgende Messungen außerhalb der Zone",
+    "batteryBoard": "Akku der Box",
+    "batteryTurret": "Akku des Turms",
+    "gsm": "GSM",
+    "actions": "Aktionen",
+    "startAnchor": "Ankern starten ({{tol}} m)",
+    "stopAnchor": "Ankern beenden",
+    "ackAlarm": "Alarm bestätigen",
+    "testSms": "SMS testen",
+    "testAlarm": "Alarm testen",
+    "log": "Protokoll",
+    "invalidFrame": "Ungültiger Rahmen ignoriert: {{reason}}",
+    "noData": "Noch keine Daten empfangen."
+  }
+}

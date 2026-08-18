@@ -1,0 +1,166 @@
+{
+  "common": {
+    "appName": "Morphé",
+    "ok": "OK"
+  },
+  "tabs": {
+    "map": "Map",
+    "settings": "Settings"
+  },
+  "map": {
+    "batteryBoardLabel": "Board battery: {{pct}} %",
+    "batteryTurretLabel": "Turret battery: {{pct}} %",
+    "boatMarker": "Boat",
+    "anchorMarker": "Anchor",
+    "referenceMarker": "Fixed reference",
+    "unknownAnchor": "Anchor position unknown: turret not detected or no GPS fix.",
+    "staleData": "Last known values, {{elapsed}}",
+    "state": {
+      "label": "Mooring state",
+      "idle": "At rest",
+      "anchored": "Mooring active",
+      "alarm": "ALARM",
+      "test": "Test"
+    },
+    "drift": "Anchor ↔ reference drift",
+    "dist": "Boat ↔ anchor distance",
+    "preAlert": "Pre-alert",
+    "outOfFive": "{{out}}/5 readings",
+    "meters": "{{value}} m",
+    "gpsQuality": {
+      "label": "GPS quality",
+      "none": "No fix",
+      "twoD": "2D",
+      "threeD": "3D"
+    },
+    "anchorAge": "Anchor point age",
+    "schematic": {
+      "noMapData": "Map background unavailable — exact geometry shown",
+      "scale": "Circle radius = {{meters}} m"
+    }
+  },
+  "anchor": {
+    "startButton": "Start mooring",
+    "stopButton": "Stop mooring",
+    "toleranceDialog": {
+      "title": "Mooring tolerance",
+      "description": "Maximum distance tolerated between the anchor and its reference position before the alarm triggers.",
+      "value": "{{value}} m",
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    },
+    "acquiring": {
+      "title": "Acquiring…",
+      "missing": {
+        "gps": "Waiting for the boat's GPS position",
+        "turret": "Waiting for the anchor's position (turret)"
+      },
+      "cancel": "Cancel"
+    },
+    "confirmStop": {
+      "title": "Stop the mooring?",
+      "message": "The board will stop monitoring the anchor.",
+      "confirm": "Stop",
+      "cancel": "Cancel"
+    }
+  },
+  "alarm": {
+    "title": {
+      "drag": "ALARM — anchor drag",
+      "turret_lost": "ALARM — turret lost",
+      "low_bat": "ALARM — low battery"
+    },
+    "drift": "Measured drift: {{value}} m",
+    "time": "Triggered at {{time}}",
+    "stopButton": "Stop the alarm",
+    "silentModeWarning": "To be woken up, keep the ringer on and the app open if possible.",
+    "notification": {
+      "title": {
+        "drag": "ALARM — anchor drag",
+        "turret_lost": "ALARM — turret lost",
+        "low_bat": "ALARM — low battery"
+      },
+      "body": "Measured drift: {{value}} m. Open the app to acknowledge."
+    },
+    "linkLost": {
+      "title": "Board link lost",
+      "body": "No data received for more than 2 minutes during an active mooring."
+    },
+    "permission": {
+      "title": "Allow notifications?",
+      "message": "To be alerted even if the phone is locked or the app is in the background, allow notifications. Without them, the alarm will only sound while the app is open.",
+      "allow": "Allow",
+      "later": "Later"
+    }
+  },
+  "errors": {
+    "ERR_PIN": "SIM card PIN rejected",
+    "ERR_NO_FIX": "GPS position unavailable, cannot start the mooring",
+    "ERR_NO_TURRET": "Anchor not detected: check the turret",
+    "ERR_BUSY": "Board busy, try again",
+    "ERR_RANGE": "Invalid value",
+    "ERR_GSM": "No GSM network: SMS not sent",
+    "ERR_SIM": "SIM card missing or blocked",
+    "ERR_UNKNOWN": "Board error",
+    "timeout": "The board is not responding, try again",
+    "stopFailed": "Could not stop the mooring, try again"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "placeholder": "The Settings screen will be built in step 6."
+  },
+  "battery": {
+    "title": {
+      "low": "Low battery",
+      "critical": "Critical battery"
+    },
+    "message": {
+      "low": "{{element}} battery low",
+      "critical": "{{element}} battery critical"
+    },
+    "element": {
+      "board": "Board",
+      "turret": "Turret"
+    }
+  },
+  "demo": {
+    "banner": "DEMONSTRATION MODE"
+  },
+  "staleness": {
+    "secondsAgo": "{{count}} s ago",
+    "minutesAgo": "{{count}} min ago",
+    "hoursAgo": "{{count}} h ago"
+  },
+  "notFound": {
+    "title": "This screen doesn't exist.",
+    "goHome": "Go to home screen"
+  },
+  "dev": {
+    "title": "Development — simulated board",
+    "openLink": "Open the development screen",
+    "scenario": "Scenario",
+    "connection": {
+      "connected": "Connected",
+      "connecting": "Connecting…",
+      "disconnected": "Disconnected"
+    },
+    "state": "State",
+    "tolerance": "Tolerance",
+    "drift": "Anchor ↔ reference drift",
+    "dist": "Boat ↔ anchor distance",
+    "out": "Consecutive out-of-zone readings",
+    "batteryBoard": "Board battery",
+    "batteryTurret": "Turret battery",
+    "gsm": "GSM",
+    "actions": "Actions",
+    "startAnchor": "Start mooring ({{tol}} m)",
+    "stopAnchor": "Stop mooring",
+    "ackAlarm": "Acknowledge alarm",
+    "testSms": "Test SMS",
+    "testAlarm": "Test alarm",
+    "log": "Log",
+    "invalidFrame": "Invalid frame ignored: {{reason}}",
+    "noData": "No data received yet."
+  }
+}

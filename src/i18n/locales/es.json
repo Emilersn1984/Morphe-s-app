@@ -1,0 +1,166 @@
+{
+  "common": {
+    "appName": "Morphé",
+    "ok": "OK"
+  },
+  "tabs": {
+    "map": "Mapa",
+    "settings": "Ajustes"
+  },
+  "map": {
+    "batteryBoardLabel": "Batería de la caja: {{pct}} %",
+    "batteryTurretLabel": "Batería de la torreta: {{pct}} %",
+    "boatMarker": "Barco",
+    "anchorMarker": "Ancla",
+    "referenceMarker": "Referencia fija",
+    "unknownAnchor": "Posición del ancla desconocida: torreta no detectada o sin punto GPS.",
+    "staleData": "Últimos valores conocidos, {{elapsed}}",
+    "state": {
+      "label": "Estado del fondeo",
+      "idle": "En reposo",
+      "anchored": "Fondeo activo",
+      "alarm": "ALARMA",
+      "test": "Prueba"
+    },
+    "drift": "Desviación ancla ↔ referencia",
+    "dist": "Distancia barco ↔ ancla",
+    "preAlert": "Prealerta",
+    "outOfFive": "{{out}}/5 lecturas",
+    "meters": "{{value}} m",
+    "gpsQuality": {
+      "label": "Calidad GPS",
+      "none": "Sin punto",
+      "twoD": "2D",
+      "threeD": "3D"
+    },
+    "anchorAge": "Antigüedad del punto del ancla",
+    "schematic": {
+      "noMapData": "Fondo de mapa no disponible — geometría exacta mostrada",
+      "scale": "Radio del círculo = {{meters}} m"
+    }
+  },
+  "anchor": {
+    "startButton": "Iniciar el fondeo",
+    "stopButton": "Detener el fondeo",
+    "toleranceDialog": {
+      "title": "Tolerancia del fondeo",
+      "description": "Distancia máxima tolerada entre el ancla y su posición de referencia antes de que se active la alarma.",
+      "value": "{{value}} m",
+      "confirm": "Confirmar",
+      "cancel": "Cancelar"
+    },
+    "acquiring": {
+      "title": "Adquiriendo…",
+      "missing": {
+        "gps": "Esperando la posición GPS del barco",
+        "turret": "Esperando la posición del ancla (torreta)"
+      },
+      "cancel": "Cancelar"
+    },
+    "confirmStop": {
+      "title": "¿Detener el fondeo?",
+      "message": "La caja dejará de vigilar el ancla.",
+      "confirm": "Detener",
+      "cancel": "Cancelar"
+    }
+  },
+  "alarm": {
+    "title": {
+      "drag": "ALARMA — garreo del ancla",
+      "turret_lost": "ALARMA — torreta perdida",
+      "low_bat": "ALARMA — batería baja"
+    },
+    "drift": "Desviación medida: {{value}} m",
+    "time": "Activada a las {{time}}",
+    "stopButton": "Detener la alarma",
+    "silentModeWarning": "Para despertarte, deja el timbre activado y la app abierta si es posible.",
+    "notification": {
+      "title": {
+        "drag": "ALARMA — garreo del ancla",
+        "turret_lost": "ALARMA — torreta perdida",
+        "low_bat": "ALARMA — batería baja"
+      },
+      "body": "Desviación medida: {{value}} m. Abre la app para confirmar."
+    },
+    "linkLost": {
+      "title": "Conexión con la caja perdida",
+      "body": "No se han recibido datos desde hace más de 2 minutos durante un fondeo activo."
+    },
+    "permission": {
+      "title": "¿Permitir notificaciones?",
+      "message": "Para ser alertado incluso si el teléfono está bloqueado o la app en segundo plano, permite las notificaciones. Sin ellas, la alarma solo sonará con la app abierta.",
+      "allow": "Permitir",
+      "later": "Más tarde"
+    }
+  },
+  "errors": {
+    "ERR_PIN": "PIN de la tarjeta SIM rechazado",
+    "ERR_NO_FIX": "Posición GPS no disponible, no se puede iniciar el fondeo",
+    "ERR_NO_TURRET": "Ancla no detectada: revisa la torreta",
+    "ERR_BUSY": "Caja ocupada, inténtalo de nuevo",
+    "ERR_RANGE": "Valor inválido",
+    "ERR_GSM": "Sin red GSM: SMS no enviado",
+    "ERR_SIM": "Tarjeta SIM ausente o bloqueada",
+    "ERR_UNKNOWN": "Error de la caja",
+    "timeout": "La caja no responde, inténtalo de nuevo",
+    "stopFailed": "No se pudo detener el fondeo, inténtalo de nuevo"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "placeholder": "La pantalla de Ajustes se construirá en la etapa 6."
+  },
+  "battery": {
+    "title": {
+      "low": "Batería baja",
+      "critical": "Batería crítica"
+    },
+    "message": {
+      "low": "Batería {{element}} baja",
+      "critical": "Batería {{element}} crítica"
+    },
+    "element": {
+      "board": "de la caja",
+      "turret": "de la torreta"
+    }
+  },
+  "demo": {
+    "banner": "MODO DEMOSTRACIÓN"
+  },
+  "staleness": {
+    "secondsAgo": "hace {{count}} s",
+    "minutesAgo": "hace {{count}} min",
+    "hoursAgo": "hace {{count}} h"
+  },
+  "notFound": {
+    "title": "Esta pantalla no existe.",
+    "goHome": "Ir a la pantalla de inicio"
+  },
+  "dev": {
+    "title": "Desarrollo — caja simulada",
+    "openLink": "Abrir la pantalla de desarrollo",
+    "scenario": "Escenario",
+    "connection": {
+      "connected": "Conectado",
+      "connecting": "Conectando…",
+      "disconnected": "Desconectado"
+    },
+    "state": "Estado",
+    "tolerance": "Tolerancia",
+    "drift": "Desviación ancla ↔ referencia",
+    "dist": "Distancia barco ↔ ancla",
+    "out": "Lecturas fuera de zona consecutivas",
+    "batteryBoard": "Batería de la caja",
+    "batteryTurret": "Batería de la torreta",
+    "gsm": "GSM",
+    "actions": "Acciones",
+    "startAnchor": "Iniciar el fondeo ({{tol}} m)",
+    "stopAnchor": "Detener el fondeo",
+    "ackAlarm": "Confirmar la alarma",
+    "testSms": "Probar SMS",
+    "testAlarm": "Probar alarma",
+    "log": "Registro",
+    "invalidFrame": "Trama inválida ignorada: {{reason}}",
+    "noData": "Todavía no se ha recibido ningún dato."
+  }
+}

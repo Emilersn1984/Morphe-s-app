@@ -1,0 +1,166 @@
+{
+  "common": {
+    "appName": "Morphé",
+    "ok": "OK"
+  },
+  "tabs": {
+    "map": "Carte",
+    "settings": "Réglages"
+  },
+  "map": {
+    "batteryBoardLabel": "Batterie boîtier : {{pct}} %",
+    "batteryTurretLabel": "Batterie tourelle : {{pct}} %",
+    "boatMarker": "Bateau",
+    "anchorMarker": "Ancre",
+    "referenceMarker": "Référence figée",
+    "unknownAnchor": "Position de l'ancre inconnue : tourelle non détectée ou pas de point GPS.",
+    "staleData": "Dernières valeurs connues, {{elapsed}}",
+    "state": {
+      "label": "État du mouillage",
+      "idle": "Au repos",
+      "anchored": "Mouillage actif",
+      "alarm": "ALARME",
+      "test": "Test"
+    },
+    "drift": "Écart ancre ↔ référence",
+    "dist": "Distance bateau ↔ ancre",
+    "preAlert": "Pré-alerte",
+    "outOfFive": "{{out}}/5 sorties",
+    "meters": "{{value}} m",
+    "gpsQuality": {
+      "label": "Qualité GPS",
+      "none": "Aucun point",
+      "twoD": "2D",
+      "threeD": "3D"
+    },
+    "anchorAge": "Âge du point ancre",
+    "schematic": {
+      "noMapData": "Fond de carte indisponible — géométrie exacte affichée",
+      "scale": "Rayon du cercle = {{meters}} m"
+    }
+  },
+  "anchor": {
+    "startButton": "Démarrer le mouillage",
+    "stopButton": "Arrêter le mouillage",
+    "toleranceDialog": {
+      "title": "Tolérance du mouillage",
+      "description": "Distance maximale tolérée entre l'ancre et sa position de référence avant déclenchement de l'alarme.",
+      "value": "{{value}} m",
+      "confirm": "Confirmer",
+      "cancel": "Annuler"
+    },
+    "acquiring": {
+      "title": "Acquisition en cours…",
+      "missing": {
+        "gps": "En attente de la position GPS du bateau",
+        "turret": "En attente de la position de l'ancre (tourelle)"
+      },
+      "cancel": "Annuler"
+    },
+    "confirmStop": {
+      "title": "Arrêter le mouillage ?",
+      "message": "Le boîtier arrêtera la surveillance de l'ancre.",
+      "confirm": "Arrêter",
+      "cancel": "Annuler"
+    }
+  },
+  "alarm": {
+    "title": {
+      "drag": "ALARME — dérapage d'ancre",
+      "turret_lost": "ALARME — tourelle perdue",
+      "low_bat": "ALARME — batterie faible"
+    },
+    "drift": "Écart mesuré : {{value}} m",
+    "time": "Déclenchée à {{time}}",
+    "stopButton": "Arrêter l'alarme",
+    "silentModeWarning": "Pour être réveillé, laisse la sonnerie active et l'app ouverte si possible.",
+    "notification": {
+      "title": {
+        "drag": "ALARME — dérapage d'ancre",
+        "turret_lost": "ALARME — tourelle perdue",
+        "low_bat": "ALARME — batterie faible"
+      },
+      "body": "Écart mesuré : {{value}} m. Ouvre l'app pour acquitter."
+    },
+    "linkLost": {
+      "title": "Liaison boîtier perdue",
+      "body": "Aucune donnée reçue depuis plus de 2 minutes pendant un mouillage actif."
+    },
+    "permission": {
+      "title": "Autoriser les notifications ?",
+      "message": "Pour être alerté même si le téléphone est verrouillé ou l'app en arrière-plan, autorise les notifications. Sans elles, l'alarme ne sonnera que si l'app est ouverte.",
+      "allow": "Autoriser",
+      "later": "Plus tard"
+    }
+  },
+  "errors": {
+    "ERR_PIN": "Code PIN de la carte SIM refusé",
+    "ERR_NO_FIX": "Position GPS indisponible, impossible de démarrer le mouillage",
+    "ERR_NO_TURRET": "Ancre non détectée : vérifie la tourelle",
+    "ERR_BUSY": "Boîtier occupé, réessaie",
+    "ERR_RANGE": "Valeur invalide",
+    "ERR_GSM": "Pas de réseau GSM : SMS non envoyé",
+    "ERR_SIM": "Carte SIM absente ou bloquée",
+    "ERR_UNKNOWN": "Erreur du boîtier",
+    "timeout": "Le boîtier ne répond pas, réessaie",
+    "stopFailed": "Impossible d'arrêter le mouillage, réessaie"
+  },
+  "settings": {
+    "title": "Réglages",
+    "language": "Langue",
+    "placeholder": "L'écran Réglages sera construit à l'étape 6."
+  },
+  "battery": {
+    "title": {
+      "low": "Batterie faible",
+      "critical": "Batterie critique"
+    },
+    "message": {
+      "low": "Batterie {{element}} faible",
+      "critical": "Batterie {{element}} critique"
+    },
+    "element": {
+      "board": "boîtier",
+      "turret": "tourelle"
+    }
+  },
+  "demo": {
+    "banner": "MODE DÉMONSTRATION"
+  },
+  "staleness": {
+    "secondsAgo": "il y a {{count}} s",
+    "minutesAgo": "il y a {{count}} min",
+    "hoursAgo": "il y a {{count}} h"
+  },
+  "notFound": {
+    "title": "Cet écran n'existe pas.",
+    "goHome": "Retour à l'écran d'accueil"
+  },
+  "dev": {
+    "title": "Développement — boîtier simulé",
+    "openLink": "Ouvrir l'écran de développement",
+    "scenario": "Scénario",
+    "connection": {
+      "connected": "Connecté",
+      "connecting": "Connexion…",
+      "disconnected": "Déconnecté"
+    },
+    "state": "État",
+    "tolerance": "Tolérance",
+    "drift": "Écart ancre ↔ référence",
+    "dist": "Distance bateau ↔ ancre",
+    "out": "Sorties consécutives",
+    "batteryBoard": "Batterie boîtier",
+    "batteryTurret": "Batterie tourelle",
+    "gsm": "GSM",
+    "actions": "Actions",
+    "startAnchor": "Démarrer le mouillage ({{tol}} m)",
+    "stopAnchor": "Arrêter le mouillage",
+    "ackAlarm": "Acquitter l'alarme",
+    "testSms": "Test SMS",
+    "testAlarm": "Test alarme",
+    "log": "Journal",
+    "invalidFrame": "Trame invalide ignorée : {{reason}}",
+    "noData": "Aucune donnée reçue pour le moment."
+  }
+}
