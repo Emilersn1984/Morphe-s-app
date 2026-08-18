@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "morphe-app",
-    "slug": "morphe-app",
+    "slug": "ms-app",
+    "owner": "mooring-solution",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -52,6 +53,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "34dc4703-99f4-4d5f-98be-36c87831e152"
+      }
     }
   }
 }
